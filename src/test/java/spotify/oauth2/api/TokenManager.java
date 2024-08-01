@@ -25,6 +25,7 @@ public class TokenManager {
             }
         }
         catch(Exception e){
+            e.printStackTrace();
             throw new RuntimeException("ABORT!!! Token renewal failed");
         }
         return access_token;
